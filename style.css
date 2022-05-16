@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #070707;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: rgb(233, 224, 224);
+  }
+  .navbar ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+  .navbar a {
+    color: rgb(233, 224, 224);
+    font-size: 18px;
+  }
+  .navbar input[type=text]{
+    border: 2px solid #302D2D;
+    background-color: #302D2D;
+    border-radius: 5px;
+    height: 25px;
+    width: 200px
+  }
+  .top-anime {
+    margin: 50px 120px;
+  }
+  .top-anime h3 {
+    color: aliceblue;
+    margin: 0px 15px;
+  }
+  .top-anime p {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -40px;
+    text-align: center;
+    filter: brightness(100%);
+  }
+  .top-anime .image-grid {
+    --gap: 13px;
+    --num-cols: 4;
+    --row-height: 131px;
+  
+    box-sizing: border-box;
+    padding: var(--gap);
+  
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+  }
+  
+  .top-anime .image-grid > figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(80%);
+  }
+  
+  .top-anime .image-grid figure:hover img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .top-anime .image-grid-col-2 {
+    grid-column: span 2;
+  }
+  
+  .top-anime .image-grid-row-2 {
+    grid-row: span 3;
+  }
+  .top-anime .image-grid-row-3 {
+    grid-row: span 2;
+  }
+  .new-episode {
+    margin: 50px 120px;
+  }
+  .new-episode h3 {
+    color: aliceblue;
+    margin: 4px 15px;
+  }
+
+  .new-episode .image-grid {
+    --gap: 26px;
+    --num-cols: 2;
+    --row-height: 278px;
+  
+    box-sizing: border-box;
+    padding: var(--gap);
+  
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+  }
+
+  .new-episode .image-grid > figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(80%);
+  }
+  .new-episode .episode {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: -25px;
+    text-align: center;
+    filter: brightness(100%);
+  }
+  .new-episode .status {
+    color: rgb(255, 255, 255);
+    margin-top: -275px;
+    filter: brightness(100%);
+  background-color: blue;width: 75px;text-align: center;margin-left: -2px;border-radius: 13px;
+  padding: 10px;}
+  .view-more {
+    border: 1px solid blue;
+    padding: 10px;
+    width: 150px;
+    margin: 1px 570px;
+    text-align: center;
+  }
+  .view-more a {
+    color: aliceblue;
+    
+  }
+  footer h3 {
+    color: aliceblue;
+    margin: 4px 15px;
+  }
+  footer p {
+    color: aliceblue;
+    margin: 4px 15px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 104px;
+    padding: 10px 0px;
+    background: #302D2D;
+    border-radius: 25px 25px 0px 0px;
+  }
+  .copy {
+    text-align: center;
+    
+  left: -94px;position: relative;}
